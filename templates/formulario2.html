@@ -1,0 +1,14 @@
+
+{%extends 'layout.html' %}
+
+{%block content %}
+
+{%import "_macro.html" as macros%}
+
+<form action="">
+    <input type="text" name="nombre" placeholder="nombre">
+    {{macros.render_input("Apaterno", "Apaterno")}}
+    {{macros.render_input("correo", "correo", "email")}}
+</form>
+
+{%endblock%}
