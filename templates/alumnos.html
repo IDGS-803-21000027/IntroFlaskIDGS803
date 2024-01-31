@@ -2,8 +2,18 @@
 {%extends 'layout.html' %}
 
 {%block content %}
+{% import "_macros.html" as macros %}
 
-<h1>
-    Alumnos
-</h1>
+    <h1>Alumnos</h1>
+    <form action="" method="post">
+    {{macros.render_field(form.nombre)}}
+    {{macros.render_field(form.apaterno)}}
+    {{macros.render_field(form.amaterno)}}
+    {{macros.render_field(form.edad)}}
+    {{macros.render_field(form.correo)}}
+    <input type="submit" name="btn1" value="registrar">
+    </form>
+
+    <h1>nombre: {{nom}}</h1>
+
 {%endblock%}
